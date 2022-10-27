@@ -4,6 +4,18 @@
 
 #include <SFML/Graphics.hpp>
 
+/*class Text
+{
+ public:
+  bool init();
+  sf::Font font;
+  sf::Text title_text;
+  sf::Text menu_text;
+  sf::Text play_option;
+  sf::Text quit_option;
+  sf::RenderWindow& window;
+};*/
+
 class Game
 {
  public:

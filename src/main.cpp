@@ -39,12 +39,24 @@ int main()
     {
       // "close requested" event: we close the window
       if (event.type == sf::Event::Closed)
+      {
         window.close();
+      }
+      // checks if keyboard event happens while game is running
+      if (event.type == sf::Event::KeyPressed)
+      {
+        game.keyPressed(event);
+      }
+      if (event.type == sf::Event::MouseButtonPressed);
+      {
+        game.mouseClicked(event);
+      }
     }
 
     //'update' element of the game loop
     game.update(dt);
     window.clear(sf::Color::Black);
+
 
     //'render' element of the game loop
     game.render();
