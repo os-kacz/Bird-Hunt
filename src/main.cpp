@@ -28,7 +28,7 @@ int main()
   while (window.isOpen())
   {
     // check all the window's events that were triggered since the last iteration of the loop
-    sf::Event event;
+    sf::Event event{};
 
     //calculate delta time
     sf::Time time = clock.restart();
@@ -44,7 +44,6 @@ int main()
 
     //'update' element of the game loop
     game.update(dt);
-
     window.clear(sf::Color::Black);
 
     //'render' element of the game loop
